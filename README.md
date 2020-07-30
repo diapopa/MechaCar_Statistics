@@ -41,17 +41,21 @@ F-statistic: 22.07 on 5 and 44 DF,  p-value: 5.35e-11
 > View(SuspensionTable)
 
 1. Which variables/coefficients provided a non-random amount of variance to the mpg values in the dataset?
+
 The F-statistic is 22.07 which is modestly high, meaning there is a strong relationship between our variables. 
 
 2. Is the slope of the linear model considered to be zero? Why or why not?
+
 The p-value is 5.35e-11 which is far below our assumed statistical significance level of 0.05%. This smaller p-vale means we reject our null hypothesis and the slope is not zero.
 
 3. Does this linear model predict mpg of MechaCar prototypes effectively? Why or why not?
+
 The R-squared is 0.7149, meaning that 71% of mpg predictions will be correct. This is good because as the R-squared value approaches 1, more predictions are correct.
 
 ### Suspension Coil Summary
 
 1. The design specifications for the MechaCar suspension coils dictate that the variance of the suspension coils must not exceed 100 pounds per inch. Does the current manufacturing data meet this design specification? Why or why not?
+
 The variance is 76.23459, therefore the suspension coils do not exceed 100 pounds per inch meaning, the current manufacturing data meets this design specification.
 
 ### Suspension Coil T-Test
@@ -105,6 +109,7 @@ mean of x
  1499.531 
 
 1. What are your interpretations and findings?
+
 First, I conducted the Shapiro-wilk normality test and found the p-value was 6.011e-11 which is far below 0.05, meaning the data is not normally distributed.
 With a significance level of 0.05 percent, our p-value of 0.5117 is above our significance level. Therefore, we do not have sufficient evidence to reject the null hypothesis, meaning the two means are statistically similar. 
 When conducting the t-test by each Lot for Lots 1 through 3, I found similar findings, that the p-value was over 0.05.
