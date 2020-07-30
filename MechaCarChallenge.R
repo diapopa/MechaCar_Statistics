@@ -1,3 +1,5 @@
+library(tidyverse)
+
 #read the mechacar data
 mecha_data <- read.csv("MechaCar_mpg.csv",stringsAsFactors = F,check.names = F)
 
@@ -16,12 +18,13 @@ var(SuspensionTable$PSI)
 sd(SuspensionTable$PSI)
 
 #T-tests
+# Across all Lots
+t.test(SuspensionTable$PSI,mu = 1500)
 # Lot 1
 t.test(subset(SuspensionTable,Manufacturing_Lot=="Lot1")$PSI,mu = 1500)
 # Lot 2
 t.test(subset(SuspensionTable,Manufacturing_Lot=="Lot2")$PSI,mu = 1500)
 # Lot 3
 t.test(subset(SuspensionTable,Manufacturing_Lot=="Lot3")$PSI,mu = 1500)
-# Across all Lots
-t.test(SuspensionTable$PSI,mu = 1500)
+
 
