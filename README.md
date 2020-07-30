@@ -29,7 +29,7 @@ vehicle_weight     1.807   0.0776 .
 spoiler_angle      1.034   0.3069    
 ground_clearance   6.551 5.21e-08 ***
 AWD               -1.346   0.1852    
----
+
 Signif. codes:  
   0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’
   0.1 ‘ ’ 1
